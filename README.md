@@ -1,4 +1,3 @@
-[ManaMasters_README.md](https://github.com/user-attachments/files/33927512/ManaMasters_README.md)
 # 🧙 ManaMasters — Magic: The Gathering Deck Builder
 
 **ManaMasters** is a web application for discovering *Magic: The Gathering* cards, creating personalized decks, and testing card draws. Built as a team project with **Node.js**, **Express**, and **MongoDB**, it retrieves card information from the Magic: The Gathering API and lets signed-in users manage their own decks.
