@@ -1,64 +1,101 @@
-#  🧌 Project Magic The Gathering
+[ManaMasters_README.md](https://github.com/user-attachments/files/33927512/ManaMasters_README.md)
+# 🧙 ManaMasters — Magic: The Gathering Deck Builder
 
-<img width="1512" alt="Capture d’écran 2024-06-03 à 21 43 26" src="https://github.com/HamzaChl/manamasters-WPL/assets/91462821/3c92550f-81dd-446a-8b26-fac9f54d49c8">
+**ManaMasters** is a web application for discovering *Magic: The Gathering* cards, creating personalized decks, and testing card draws. Built as a team project with **Node.js**, **Express**, and **MongoDB**, it retrieves card information from the Magic: The Gathering API and lets signed-in users manage their own decks.
 
-## Projectbeschrijving
+![ManaMasters application preview](https://github.com/HamzaChl/manamasters-WPL/assets/91462821/3c92550f-81dd-446a-8b26-fac9f54d49c8)
 
-Gemeenschappelijk is een Express/Node.js applicatie met MongoDB als database. De applicatie stelt gebruikers in staat om projecten te kiezen en decks van kaarten te beheren, waarbij elke gebruiker zijn eigen decks heeft. De kaarten worden opgehaald via de Magic: The Gathering API.
+## 🛠️ Tech Stack
 
-## Functionaliteiten
+| Technology | Purpose |
+| --- | --- |
+| **Node.js** | Runs the application on the server |
+| **Express** | Handles routes and HTTP requests |
+| **MongoDB** | Stores user-specific deck information |
+| **Magic: The Gathering API** | Provides card details and search results |
 
-- **Landing Page:** Gebruikers zien een overzicht van alle beschikbare projecten, inclusief naam en afbeelding.
-- **Project Selectie:** Gebruikers kunnen een project kiezen, mits ze zijn ingelogd.
-- **Inloggen:** Gebruikers moeten inloggen om toegang te krijgen tot de projectdetails.
-- **Kaarten Zoeken:** Gebruikers kunnen kaarten zoeken via een zoekbalk, waarbij de eerste 10 kaarten met de zoekterm worden getoond.
-- **Kaart Eigenschappen:** Verschillende randen voor Commons, Uncommons, Rares en Mythic Rares.
-- **Kaart Vergroten:** Kaarten vergroten wanneer je erover hovert.
-- **Kaart Toevoegen:** Gebruikers kunnen kaarten in hun decks toevoegen.
-- **Deck Overzicht:** Gebruikers kunnen hun decks beheren, inclusief het toevoegen en verwijderen van kaarten.
-- **Drawtest:** Gebruikers kunnen een drawtest uitvoeren om te zien hoe een deck presteert bij het trekken van kaarten.
+## ✨ Features
 
-## Installatie
+### 🔐 User Access & Navigation
+- **Landing page** — Explore available projects with their names and images.
+- **Authentication** — Sign in to access protected project details.
+- **Project selection** — Select a project once authenticated.
+- **Personal decks** — Each user can manage their own card collections and decks.
 
-Volg de onderstaande stappen om de applicatie lokaal te installeren en te draaien:
+### 🔎 Card Search & Discovery
+- **Card search** — Find cards by entering a search term.
+- **Search results** — View the first 10 matches, with pagination for additional results where available.
+- **Rarity indicators** — Different card borders for Common, Uncommon, Rare, and Mythic Rare cards.
+- **Hover preview** — Enlarge a card by hovering over it.
 
-1. **Clone de repository:**
-    ```bash
-    git clone [URL van de repository]
-    cd [naam van de repository]
-    ```
+### 🃏 Deck Management
+- **Build decks** — Add cards from search results to your decks.
+- **Edit decks** — Remove cards and adjust quantities.
+- **Draw test** — Simulate drawing cards to experiment with a deck.
 
-2. **Installeer de benodigde dependencies:**
-    ```bash
-    npm install
-    ```
+## 🚀 Getting Started
 
-3. **Start de applicatie:**
-    ```bash
-    npm start
-    ```
+### Prerequisites
+- **Node.js** and **npm**
+- Access to a **MongoDB** database
 
-De applicatie zal nu draaien op `http://localhost:3000`.
+### Installation
 
-## Gebruik
+**1. Clone the repository**
 
-1. **Landing Page:** Bezoek `http://localhost:3000` om de lijst van projecten te zien.
-2. **Inloggen:** Klik op "Inloggen" en voer je gegevens in om toegang te krijgen tot de projectdetails.
-3. **Project Selectie:** Klik op een project om de projectdetails te bekijken. Als je niet ingelogd bent, krijg je een melding om eerst in te loggen.
-4. **Kaarten Zoeken:** Gebruik de zoekbalk om kaarten op te vragen. De eerste 10 kaarten met de zoekterm worden getoond. (BONUS) Pagina’s met alle resultaten worden weergegeven als er meer dan 10 kaarten zijn.
-5. **Kaart Toevoegen aan Deck:** Klik op een kaart om deze te vergroten of een nieuwe pagina te openen. Voeg de kaart toe aan je deck.
-6. **Deck Beheren:** Bekijk en beheer je decks via de decks pagina. Voeg kaarten toe, verwijder kaarten, en pas de hoeveelheden aan.
-7. **Drawtest:** Voer een drawtest uit om te zien hoe je deck presteert bij het trekken van kaarten.
+```bash
+git clone <repository-url>
+cd <repository-folder>
+```
 
+**2. Install dependencies**
 
-## Licentie
+```bash
+npm install
+```
 
-Dit project is gelicenseerd onder de MIT Licentie. Zie het [LICENSE](LICENSE) bestand voor meer informatie.
+**3. Configure the database**
 
-## Credits
+Make sure your MongoDB connection is configured as required by the project. Keep any credentials or secrets out of version control.
 
-Dit project is gemaakt door Manamasters: Imran, Charaf en Hamza, en is onderdeel van een schoolopdracht.
+**4. Start the application**
 
-## API Documentatie
+```bash
+npm start
+```
 
-Voor meer informatie over de gebruikte API, bezoek de officiële [Magic: The Gathering API documentatie](https://api.magicthegathering.io/v1/cards).
+**5. Open the app**
+
+Visit **http://localhost:3000** if you are using the project's default port.
+
+> **Note:** Replace the repository placeholders with your own GitHub URL and folder name. Depending on the project configuration, you may also need to set environment variables before running the app.
+
+## 🎮 How to Use
+
+1. **Explore** — Open the landing page and browse available projects.
+2. **Sign in** — Log in to access project details and your personal decks.
+3. **Find cards** — Search for *Magic: The Gathering* cards by name or keyword.
+4. **Inspect cards** — Preview a card and see its rarity styling.
+5. **Build a deck** — Add or remove cards and change quantities.
+6. **Test your deck** — Use the draw test to simulate drawing cards.
+
+## 📚 What We Practiced
+
+- Building a web application with Node.js and Express
+- Integrating an external API to retrieve card data
+- Working with MongoDB to manage user-specific data
+- Implementing authenticated user flows
+- Creating an interactive deck-building experience
+- Collaborating on a shared software project
+
+## 👥 Contributors
+
+Developed as a collaborative school project by **Imran, Charaf, and Hamza** under the team name **ManaMasters**.
+
+## 🔗 API Reference
+
+Card data is provided by the [Magic: The Gathering API](https://docs.magicthegathering.io/).
+
+## 📄 License
+
+This project is distributed under the **MIT License**. See the [LICENSE](LICENSE) file for details.
