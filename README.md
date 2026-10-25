@@ -89,7 +89,7 @@ Visit **http://localhost:3000** if you are using the project's default port.
 
 ## 👥 Contributors
 
-Developed as a collaborative school project by **Imran, Charaf, and Hamza** under the team name **ManaMasters**.
+Developed as a collaborative school project by **Charaf, Imran, and Hamza** under the team name **ManaMasters**.
 
 ## 🔗 API Reference
 
